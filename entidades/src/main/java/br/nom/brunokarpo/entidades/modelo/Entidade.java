@@ -10,6 +10,7 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 public abstract class Entidade implements Serializable {
 
+	private static final long serialVersionUID = 2265546731120330505L;
 	private Long id;
 	/**
 	 * @return the id

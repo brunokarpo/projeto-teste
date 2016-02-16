@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 @Entity
 public class Plano extends Entidade {
 
+	private static final long serialVersionUID = -3244056956846691223L;
 	private String nome;
 
 	/**
