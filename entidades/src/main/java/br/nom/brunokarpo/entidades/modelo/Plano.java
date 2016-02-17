@@ -2,6 +2,7 @@ package br.nom.brunokarpo.entidades.modelo;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
@@ -31,7 +32,7 @@ public class Plano extends Entidade {
 	/**
 	 * @return the modulos
 	 */
-	@OneToMany(mappedBy="plano")
+	@OneToMany(mappedBy="plano", cascade=CascadeType.MERGE)
 	public List<PrecoModulo> getPrecoModulos() {
 		return precoModulos;
 	}
