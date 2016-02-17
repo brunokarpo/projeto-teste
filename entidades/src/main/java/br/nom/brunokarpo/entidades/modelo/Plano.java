@@ -11,7 +11,7 @@ public class Plano extends Entidade {
 
 	private static final long serialVersionUID = -3244056956846691223L;
 	private String nome;
-	private List<PrecoModulo> modulos;
+	private List<PrecoModulo> precoModulos;
 
 	/**
 	 * @return the nome
@@ -32,15 +32,15 @@ public class Plano extends Entidade {
 	 * @return the modulos
 	 */
 	@OneToMany(mappedBy="plano")
-	public List<PrecoModulo> getModulos() {
-		return modulos;
+	public List<PrecoModulo> getPrecoModulos() {
+		return precoModulos;
 	}
 
 	/**
 	 * @param modulos the modulos to set
 	 */
-	public void setModulos(List<PrecoModulo> modulos) {
-		this.modulos = modulos;
+	public void setPrecoModulos(List<PrecoModulo> precoModulos) {
+		this.precoModulos = precoModulos;
 	}
 
 }
