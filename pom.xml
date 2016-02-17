@@ -74,6 +74,7 @@
 	<modules>
 		<module>entidades</module>
 		<module>negocio</module>
+		<module>aplicacao-basica</module>
 	</modules>
 
 	<dependencies>
@@ -101,10 +102,17 @@
 			<dependency>
 				<groupId>br.nom.brunokarpo</groupId>
 				<artifactId>entidades</artifactId>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>br.nom.brunokarpo</groupId>
 				<artifactId>negocio</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>br.nom.brunokarpo</groupId>
+				<artifactId>aplicacao-base</artifactId>
+				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
