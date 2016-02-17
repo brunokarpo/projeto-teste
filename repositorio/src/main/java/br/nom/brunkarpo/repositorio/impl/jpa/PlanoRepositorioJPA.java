@@ -12,6 +12,14 @@ public class PlanoRepositorioJPA extends PlanoAbstractRepositorio {
 
 	@Inject private EntityManager manager;
 
+	public PlanoRepositorioJPA() {
+		// Construtor Default
+	}
+
+	public PlanoRepositorioJPA(EntityManager manager) {
+		this.manager = manager;
+	}
+
 	@Override
 	public void salvar(Plano plano) {
 		manager.getTransaction().begin();
