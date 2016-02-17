@@ -91,4 +91,8 @@
 		</dependency>
 	</dependencies>
 
+	<modules>
+		<module>entidades</module>
+		<module>negocio</module>
+	</modules>
 </project>
