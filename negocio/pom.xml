@@ -19,4 +19,12 @@
 	<build>
 		<finalName>${project.artifactId}-${project.version}</finalName>
 	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>br.nom.brunokarpo</groupId>
+			<artifactId>entidades</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>
