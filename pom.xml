@@ -71,6 +71,11 @@
 		</plugins>
 	</build>
 
+	<modules>
+		<module>entidades</module>
+		<module>negocio</module>
+	</modules>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.jboss.weld.servlet</groupId>
@@ -91,8 +96,16 @@
 		</dependency>
 	</dependencies>
 
-	<modules>
-		<module>entidades</module>
-		<module>negocio</module>
-	</modules>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>br.nom.brunokarpo</groupId>
+				<artifactId>entidades</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>br.nom.brunokarpo</groupId>
+				<artifactId>negocio</artifactId>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>
