@@ -73,6 +73,7 @@
 
 	<modules>
 		<module>entidades</module>
+		<module>repositorio</module>
 		<module>negocio</module>
 	</modules>
 
@@ -106,6 +107,11 @@
 			<dependency>
 				<groupId>br.nom.brunokarpo</groupId>
 				<artifactId>negocio</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>br.nom.brunokarpo</groupId>
+				<artifactId>repositorio</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
